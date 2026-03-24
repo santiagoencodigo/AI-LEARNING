@@ -1,82 +1,143 @@
-<DOCTYPE! html/>
+<!-- 
+    Documento creado el 23/03/2026 a las 6:00 PM
+
+
+-->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfolio de Santiago Muñeton Hernandez/santiagoencodigo, un desarollador web.">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         
-        <meta property="og:title" content="Portfolio de santiagoencodigo"/>
-        <meta property="og:description" content="Portfolio de Santiago Muñeton Hernandez/santiagoencodigo, un desarollador web que desea ser un fullstack developer.">
-        <meta property="og:image" content="./imagenesparamisprogramas/santiagoencodigo-chatgptimage.png">
-        <meta property="og:url" content="https://santiagoencodigo.com">
-
-        <title>pensamiento informatico 🧠💻</title>              
-        <link rel="icon" type="image/png" href="./imagenesparamisprogramas/santiagoencodigo-chatgptimage.png">
-        <link rel="stylesheet" href="./css/pensamiento informatico.css">
-        <script src="./js/pensamiento informatico.js"></script>    
-    </head>
+        <!-- Metaetiquetas para SEO y descripción -->
+        <meta name="description" content="Documentación y notas de aprendizaje sobre Claude. IA generativa, prompt engineering y buenas prácticas en inteligencia artificial.">
+        <meta name="keywords" content="Claude, Anthropic, IA, inteligencia artificial, aprendizaje, AI learning, prompt engineering, santiagoencodigo">
+        <meta name="author" content="santiagoencodigo">
+        <meta name="robots" content="index, follow">
+        
+        <!-- Open Graph para redes sociales -->
+        <meta property="og:title" content="- Mi aprendizaje en IA | santiagoencodigo">
+        <meta property="og:description" content="Documentación completa de Claude | Anthropic. Aprende sobre IA generativa, prompts y buenas prácticas.">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="es_ES">
+        
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_library">
+        <meta name="twitter:title" content="- Mi aprendizaje en IA">
+        <meta name="twitter:description" content="Documentación y notas de Claude | Anthropic.">
+        
+        <title>AI Learning | santiagoencodigo</title>
+        
+        <!-- Fuente moderna de Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+        
+        <!-- Favicon y icono stickman desde Google Fonts (Material Icons) -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 13c-2.33 0-4.31-1.46-5.11-3.5h10.22c-.8 2.04-2.78 3.5-5.11 3.5z'/%3E%3C/svg%3E">
     
-    <body>
-        <div class="container">
-            <div class="header">
-                <div class="logo">
-                    <img src="./imagenesparamisprogramas/escritura.PNG">
-                    <h1 id="title-santiagoencodigo">SANTIAGOENCODIGO</h1>
-                </div>
 
-                <nav class="menu">
+
+
+
+
+
+
+
+
+        <!-- 
+            Estilos CSS - C O M P O N E N T S
+        -->
+        <link rel="stylesheet" href="./Assets/css/index.css">
+        <link rel="stylesheet" href="./Assets/css/1-sidebar.css">
+        <link rel="stylesheet" href="./Assets/css/2-hero.css">
+
+    </head>
+<body>
+    <div class="container">
+        <div class="grid">
+
+
+
+
+
+
+
+
+
+
+
+            
+            <!-- BARRA LATERAL: ÍNDICE DEL CURSO -->
+            <aside class="sidebar">
+                <h3>AI Learning - santiagoencodigo</h3>
+                <nav>
                     <ul>
-                        <li><a href="#mokepon">Mokepon</a></li>
-                        <li><a href="#quien_soy">Quien Soy</a></li>
-                        <li><a href="#developer">Developer</a></li>
-                    </ul>                   
+                        <li><a href="#1-introduction">1. Introduction</a></li>
+
+                    </ul>
                 </nav>
-            </div>
-
-            <div class="content">
-                <div class="box a1">
-                    <h1>En diciembre del año 2024 inicia todo:</h1>   
-                    <span class="verde">"entre más pase el tiempo más se perfeccionará este espacio."</span>            
-                    <p>
-                        El proposito de este <strong>espacio digital</strong> <u>es hacer codigo sobre todos mis escritos fisicos y digitales</u>
-                        <br>
-                        complementando mis habilidades como programador y persona creando a <span class="verde">santiagoencodigo</span>   
-                    </p> 
+                <div class="card-note" style="margin-top: 2rem; background:#f3f4f6; border-left-color:#3b82f6;">
+                    <p style="margin-bottom:0; font-size:0.85rem;"><strong>santiagoencodigo</strong><br>AI Learning</p>
                 </div>
+            </aside>
 
-                <div class="box a2">
-                    <span id="spansantiagoencodigo" class="roboto">santiagoencodigo</span>  
-                        <br>
-                    <span id="parrafo-1">I'm Santiago Muñeton Hernandez Currently, I am studying HTML, CSS, and JavaScript. 🤖</span>
-                        <br>
-                    <span id="parrafo-2">Without experience in programming jobs, I love creating code, developing web pages. 👾</span>
-                        <br>
-                    <span id="parrafo-3">I enjoy exploring the internet and browsing through websites and content channels. 🖱⌨</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- CONTENIDO PRINCIPAL: DOCUMENTACIÓN DEL CURSO -->
+            <main class="content" id="1-introduction">
+                <div class="hero">
+                    <div class="hero-content">
+                        <span class="hero-badge" >https://github.com/santiagoencodigo/AI-LEARNING</span>
+                        <h1>I'm <span class="highlight">santiagoencodigo</span></h1>
+                        <p class="hero-description">
+                            I am a Software Development student at SENA, focused on building functional and well-structured web applications using HTML, CSS, and JavaScript. My experience includes academic projects centered on functional analysis, technical documentation, and software solutions.
+
+                            Parallel to my formal education, I am a self-taught developer working on practical projects to master technical foundations and best practices. Currently, I am expanding my horizons into Artificial Intelligence, aiming to integrate AI capabilities into professional web development.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Months of experience:</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1%</span>
+                                <span class="stat-label">Beginning the process</span>
+                            </div>
+                        </div>
+                        <p class="hero-mission">
+                            Driven by a deep curiosity for Artificial Intelligence, I am embarking on a journey to explore the vast landscape of AI-powered tools and technologies. This repository serves as my personal knowledge base for Claude, where I document my findings on Anthropic’s ecosystem. My goal is to understand the mechanics of these models and discover how to build innovative, AI-driven products. <strong>Here, you will find my notes, experiments, and insights as I transition from learning the fundamentals to creating real-world solutions with AI.</strong>
+                        </p>
+                        <div class="hero-cta">
+                            <span class="badge">Artificial Intelligence is the new electricity. Just as electricity transformed almost everything 100 years ago, today I actually have a hard time thinking of an industry that I don’t think AI will transform in the next several years." — Andrew Ng</span>
+                        </div>
+                    </div>
+                    <div class="hero-background"></div>
                 </div>
-
-                <div class="box a3">
-                    <p>
-                        <span class="granverde">Minijuegos que he diseñado aprendiendo</span>
-                        <br> <strong>Son algoritmos jugando con alerts y prompts para acostumbrarme a la programación básica.</strong> 🎮
-                        
-                        <br><br><br>
-
-                        <input type="radio" name="JuegosConJS" id="CuantaProbabilidadHayDe" />   
-                        <label class="juegosConPrompts" for ="CuantaProbabilidadHayDe">Cuanta Probabilidad Hay De...</label>
-
-                        <input type="radio" name="JuegosConJS" id="PiedraPapeloTijera" />
-                        <label class="juegosConPrompts" for ="PiedraPapeloTijera">Piedra, Papel o Tijera</label>
-                    
-                        <input type="radio" name="JuegosConJS" id="ProbabilidadConDirecciones" />
-                        <label class="juegosConPrompts" for ="ProbabilidadConDirecciones">Cuanta Probabilidad Hay, Pero Con Direcciones.</label>
-
-                        <br><br><br>
-
-                        <button id="boton-seleccion-juegoJS">Selecciona el juego</button>
-                    </p>                    
-                </div>
-            </div>
+                <footer>
+                    🧑‍💻 santiagoencodigo | AI Learning
+                </footer>
+            </main>
         </div>
-    </body>
+    </div>
+</body>
 </html>
-

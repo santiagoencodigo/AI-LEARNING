@@ -1,0 +1,162 @@
+.sidebar {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid #e5e7eb;
+}
+
+.sidebar-toggle {
+    display: none;
+}
+
+.sidebar-overlay {
+    display: none;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.close-menu {
+    display: none;
+}
+
+.sidebar h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav li {
+    margin-bottom: 0.75rem;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+    display: block;
+    padding: 0.25rem 0;
+}
+
+.sidebar nav a:hover {
+    color: #d97706;
+}
+
+.sidebar nav a.active {
+    color: #d97706;
+    font-weight: 600;
+}
+
+.sidebar-footer {
+    margin-top: 2rem;
+}
+
+.sidebar-footer .card-note {
+    background: #f3f4f6;
+    border-left-color: #3b82f6;
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 0;
+        background: transparent;
+        border: none;
+    }
+    
+    .sidebar-toggle {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1001;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid #e5e7eb;
+        padding: 0.6rem 1rem;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .sidebar-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1001;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+    }
+    
+    .sidebar-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .sidebar-content {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        z-index: 1002;
+        padding: 1.5rem;
+        overflow-y: auto;
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+    
+    .sidebar-content.active {
+        left: 0;
+    }
+    
+    .close-menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #6b7280;
+    }
+    
+    body.menu-open {
+        overflow: hidden;
+    }
+}
