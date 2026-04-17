@@ -1,0 +1,50 @@
+# ARCHIVOS DEL SISTEMA
+
+.DS_Store           # Archivos de macOS
+Thumbs.db           # Archivos de Windows
+desktop.ini         # Archivos de Windows
+
+
+
+# EDITORES Y ENTORNOS
+
+.vscode/            # Configuración personal de VS Code
+.idea/              # Configuración de WebStorm/IntelliJ
+*.swp               # Archivos temporales de Vim
+*.swo               # Archivos temporales de Vim
+*~                  # Archivos de respaldo
+
+
+
+# LOGS Y TEMPORALES
+
+*.log               # Archivos de registro
+*.tmp               # Archivos temporales
+*.temp              # Archivos temporales
+npm-debug.log*      # Logs de npm
+
+
+
+# DEPENDENCIAS (si se llega a usar npm en el futuro)
+
+node_modules/       # Dependencias (son pesadas, no se suben)
+package-lock.json   # Bloqueo de versiones (opcional)
+
+
+
+# VARIABLES DE ENTORNO (¡MUY IMPORTANTE!)
+
+.env                # Las claves secretas NUNCA se suben
+.env.local
+.env.production
+*.key
+*.pem
+*.secret
+
+
+
+# ARCHIVOS DEL PROYECTO
+
+*.backup            # Respaldos manuales
+*.old               # Versiones viejas
+.DS_Store
