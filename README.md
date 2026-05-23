@@ -49,10 +49,3 @@ Mit License - You are free to use, modify, and distribute this code and notes, a
 
 
 <!-- ## Tabla de Contenido -->
-
-
-
-
-
-
----
