@@ -31,6 +31,12 @@ node_modules/       # Dependencias (son pesadas, no se suben)
 package-lock.json   # Bloqueo de versiones (opcional)
 
 
+# Ignorar carpeta de imágenes de OpenClaw
+Assets/img/02-instalacion-openclaw/
+
+# Ignorar archivo temporal
+Docs/02-openclaw-temporal.md
+
 
 # VARIABLES DE ENTORNO (¡MUY IMPORTANTE!)
 
