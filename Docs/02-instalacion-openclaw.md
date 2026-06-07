@@ -452,20 +452,4 @@ Y a partir de este punto, empieza a surgir pensamientos bastantes interesantes:
 
     No solo conversa.
 
-
-
-
-
-
-
-
-
-
 ---
-
-
-
-
-
-
-
