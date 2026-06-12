@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>santiagoencodigo · Portfolio</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/icons/white-icons/8-icon-white-man.svg">
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <!-- Font Awesome (iconos tecnológicos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./assets/index.css">
+</head>
+<body>
+
+<!-- Navegación Sticky -->
+<nav>
+  <span class="nav-clock" id="clock">--:--:--</span>
+  <a class="nav-logo">santiagoencodigo</a>
+  <ul class="nav-links">
+    <li><a data-panel="0">Inicio</a></li>
+    <li><a data-panel="1">Portfolio</a></li>
+    <li><a data-panel="3">Skills</a></li>
+    <li><a data-panel="5">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- Flechas de navegación (más grandes y cuadradas) -->
+<button class="arr gone" id="ap" aria-label="Anterior">←</button>
+<button class="arr" id="an" aria-label="Siguiente">→</button>
+
+<!-- Indicadores de panel -->
+<div id="pdots"></div>
+
+<!-- Contenedor principal -->
+<div id="stage">
+  <div id="rail">
+
+    <!-- P0 · HERO -->
+    <div class="panel" id="p0">
+      <div class="sidebar">
+        <div class="sb-brand">santiagoencodigo</div>
+      <div class="sb-avatar">
+        <!-- La imagen ahora será fondo, no se necesita etiqueta img -->
+      </div>
+        <div class="sb-type-wrap">
+          <div class="sb-type-lbl">// especialidad</div>
+          <div class="sb-type" id="typing"></div>
+        </div>
+        <button class="btn-cat" data-panel="1">VER PORTFOLIO →</button>
+      </div>
+
+      <div class="carousel" id="carousel">
+        <div class="cs on" data-i="0">
+          <img src="assets/img/portfolio/2-primer-portfolio.png" alt="Primer Portfolio">
+          <div class="cs-ov"></div>
+          <div class="cs-info">
+            <div class="cs-lbl">// Bogotá, Colombia · 2026</div>
+            <h1 class="cs-h">SANTIAGO<br>MUÑETON</h1>
+            <p class="cs-sub">Desarrollador Junior. Frontend, diseño y experiencia de usuario.</p>
+          </div>
+        </div>
+        <div class="cs" data-i="1">
+          <img src="assets/img/portfolio/6-desarrollo-profesional.PNG" alt="Desarrollo Profesional">
+          <div class="cs-ov" style="background:linear-gradient(135deg,rgba(11,78,255,.25),rgba(0,0,0,.6))"></div>
+          <div class="cs-info">
+            <div class="cs-lbl">// SENA ADSO · Frontend</div>
+            <h1 class="cs-h">CÓDIGO<br>LIMPIO</h1>
+            <p class="cs-sub">HTML semántico, CSS Grid, JavaScript ES6 y más.</p>
+          </div>
+        </div>
+        <div class="cs" data-i="2">
+          <img src="assets/img/portfolio/8-ai-learning.PNG" alt="AI Learning">
+          <div class="cs-ov" style="background:linear-gradient(135deg,rgba(107,78,156,.3),rgba(0,0,0,.6))"></div>
+          <div class="cs-info">
+            <div class="cs-lbl">// Proyectos Reales</div>
+            <h1 class="cs-h">DIGITAL<br>SOLUTIONS</h1>
+            <p class="cs-sub">Transformando ideas en experiencias funcionales y estéticas.</p>
+          </div>
+        </div>
+        <div class="cdots" id="cdots">
+          <div class="cdot on" data-i="0"></div>
+          <div class="cdot" data-i="1"></div>
+          <div class="cdot" data-i="2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P1 · PROYECTOS DESTACADOS -->
+    <div class="panel" id="p1">
+      <div class="strip-head">
+        <div>
+          <div class="sh-lbl">// 01 — Catálogo Técnico</div>
+          <div class="sh-title">PROYECTOS DESTACADOS</div>
+        </div>
+        <div class="sh-hint">Desliza las tarjetas <span>→</span></div>
+      </div>
+      <div class="strip" id="strip"></div>
+    </div>
+
+    <!-- P2 · MANIFIESTO -->
+    <div class="panel" id="p2">
+      <div class="vis">
+        <span class="vis-icon">⬡</span>
+        <p class="vis-txt">"Existencias limitadas.<br>Diseñado para quienes<br>no siguen las reglas."</p>
+        <button class="btn-exp" data-panel="1">EXPLORAR UNIVERSO →</button>
+      </div>
+      <span class="vc-l">AUTÉNTICO CÓDIGO</span>
+      <span class="vc-r">2026</span>
+    </div>
+
+    <!-- P3 · EDITORIAL + SKILLS -->
+    <div class="panel" id="p3">
+      <div class="ed-l">
+        <div class="ed-label">// Pienso //</div>
+        <h2 class="ed-title">I'm<br>santiagoencodigo</h2>
+        <p class="ed-body">Aprendiz SENA en Análisis y Desarrollo de Software, con conocimientos en HTML, CSS y JavaScript, y formación continua en desarrollo backend. Experiencia académica en análisis funcional, documentación técnica y apoyo a soluciones de software orientadas al entorno empresarial. Destaco por el compromiso, la adaptabilidad y el aprendizaje continuo.</p>
+        <blockquote class="ed-quote">"Colombia se encuentra en una etapa de transición digital. Me visualizo contribuyendo activamente a esta transición, incorporando tecnologías y soluciones digitales que optimicen procesos y mejoren la eficiencia. Sueño con un Bogotá moderno, tecnológico y seguro."</blockquote>
+        <div class="chips" id="tech-chips"></div>
+      </div>
+      <div class="ed-r">
+        <div class="ed-img-frame">
+          <img src="assets/img/portfolio/6-desarrollo-profesional.PNG" alt="Desarrollo Profesional">
+        </div>
+        <div class="ed-code-frame">
+          <code class="sc"><span class="kw">const</span> Santiago = {
+  role: <span class="s">'Junior Dev'</span>,
+  location: <span class="s">'Bogotá, CO'</span>,
+  stack: [<span class="s">'HTML'</span>, <span class="s">'CSS'</span>, <span class="s">'JS'</span>, <span class="s">'PHP'</span>],
+  learning: [<span class="s">'Laravel'</span>, <span class="s">'APIs'</span>, <span class="s">'DB'</span>],
+  passion: <span class="s">'UI/UX'</span>,
+  status: <span class="s">'🟢 disponible'</span>
+};</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 · GRID COMPLETO -->
+    <div class="panel" id="p4">
+      <div class="grid-head">
+        <div>
+          <div class="sh-lbl">// 02 — Todos los Proyectos</div>
+          <div class="sh-title">CATÁLOGO COMPLETO</div>
+        </div>
+      </div>
+      <div class="grid-body">
+        <div class="proj-grid" id="pgrid"></div>
+      </div>
+    </div>
+
+    <!-- P5 · ÓRBITA + CONTACTO (fondo negro) -->
+    <div class="panel" id="p5">
+      <div class="orbit-half">
+        <div class="osys">
+          <div class="sun"></div>
+          <div class="eo"><div class="earth"></div></div>
+          <div class="mo"><div class="moon"></div></div>
+        </div>
+        <span class="orb-lbl">santiagoencodigo · sistema solar</span>
+      </div>
+      <div class="contact-half">
+        <div class="c-big">santiagoencodigo</div>
+        <!-- Sin imagen pixel -->
+        <ul class="c-links">
+          <li class="cl"><a href="https://github.com/santiagoencodigo" target="_blank"><img src="assets/img/icons/darks-icons/1-logo-github.png" alt="GitHub" class="social-icon"> GitHub — santiagoencodigo <span class="cla">↗</span></a></li>
+          <li class="cl"><a href="https://www.linkedin.com/in/santiago-mu%C3%B1eton-hernandez-4aaa612a7/" target="_blank"><img src="assets/img/icons/darks-icons/3-logo-linkedin.svg" alt="LinkedIn" class="social-icon"> LinkedIn — Santiago Muñeton <span class="cla">↗</span></a></li>
+          <li class="cl"><a href="https://www.instagram.com/santiagoencodigo/" target="_blank"><img src="assets/img/icons/darks-icons/2-logo-instagram.png" alt="Instagram" class="social-icon"> Instagram — santiagoencodigo <span class="cla">↗</span></a></li>
+          <li class="cl"><a href="https://discord.com/users/santiagoencodigo" target="_blank"><img src="assets/img/icons/darks-icons/4-logo-discord.png" alt="Discord" class="social-icon"> Discord — santiagoencodigo <span class="cla">↗</span></a></li>
+          <li class="cl"><a href="mailto:munetonsantiago@gmail.com"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i> munetonsantiago@gmail.com <span class="cla">↗</span></a></li>
+        </ul>
+      </div>
+      <div class="p-foot">© 2026 santiagoencodigo — Bogotá, Colombia</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MODAL (sin selectores de color) -->
+<div class="mbg" id="mbg" onclick="mbgClick(event)">
+  <div class="mbox">
+    <div class="mh">
+      <h2 class="mt" id="mtitle">—</h2>
+      <button class="mc" onclick="closeModal()">✕ CERRAR</button>
+    </div>
+    <div class="mi" id="mimg"></div>
+    <div class="mb">
+      <p class="md" id="mdesc"></p>
+      <div class="mtl">// Stack Técnico</div>
+      <div class="mbadges" id="mbadges"></div>
+      <!-- Eliminados los thumbs -->
+    </div>
+  </div>
+</div>
+
+<script src="./scripts/main.js"></script>
+</body>
+</html>
